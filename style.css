@@ -1029,3 +1029,153 @@ nav ul {
         width: 350px;
     }   
 }
+
+.invest {
+    /* border: 2px solid red; */
+    padding: 0px 0px 50px 0px;
+}
+
+.invest .head {
+    /* border: 2px solid purple; */
+    width: 80%;
+    margin: auto;
+}
+
+.invest-wrapper {
+    /* border: 2px solid blue; */
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #7913E5;
+    padding: 50px 20px 0px 30px;
+    /* height: 65vh; */
+    border-radius: 30px;
+}
+
+.invest-left {
+    color: white;
+}
+
+.invest-left h1 {
+    font-size: 2.5em;
+    padding: 0px 0px 30px 0px;
+    font-weight: 600;
+}
+
+.invest-right {
+    /* position: relative; */
+    padding: 0;
+}
+
+.invest-right img {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 90px; */
+    margin-top: 10px;
+}
+
+.invest-left p {
+    /* border: 2px solid red; */
+    width: 50%;
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+.invest-right {
+    display: flex;
+    align-items: baseline;
+}
+
+.invest-right .alone2 {
+    display: none;
+}
+
+.alone2 {
+    display: flex;
+    align-items: center;
+    /* margin-top: 150px; */
+}
+
+@media(max-width:1310px) {
+    .invest-wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width:1165px) {
+    .invest-wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px) {
+    .invest-wrapper {
+        flex-direction: column;
+        width: 90%;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .invest-left {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    .invest-left p {
+        width: 100%;
+    }
+
+    .invest-right {
+        justify-content: space-evenly;
+    }
+
+    .invest-left .alone2 {
+        display: none;
+    }
+
+    .invest-right .alone2 {
+        display: block;
+        display: flex;
+        font-size: 1.2em;
+        color: white;
+    }
+}
+
+@media(max-width:1014px) {
+    .invest-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:596px) {
+    .invest-wrapper {
+        width: 98%;
+    }
+    .invest-right .phoneimage {
+        width: 350px;
+    }
+
+    .invest-left h1 {
+        font-size: 2em;
+    }
+}
+
+@media(max-width:496px) {
+    .invest-right .phoneimage {
+        width: 300px;
+    }
+}
+
+@media(max-width:494px) {
+    .invest-wrapper {
+         padding: 50px 10px 0px 10px;
+    }
+}
+
+@media(max-width:339px) {
+    .invest-right .phoneimage {
+        width: 250px;
+    }
+}
