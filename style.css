@@ -1364,14 +1364,16 @@ nav ul {
 .featured {
     padding: 160px 0px 0px 0px;
 }
-.featured-wrapper {
-    width: 80%;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 170px));
+
+.featured .head2 {
+    /* border: 2px solid red; */
+    font-size: 0.8em;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .featured-wrapper img {
@@ -1379,10 +1381,32 @@ nav ul {
     height: auto;
 }
 
-.featured-wrapper div {
+.elder div {
     width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.featured-wrapper {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elder {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid blue; */
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
 
 .sharp img {
     width: 80px;
