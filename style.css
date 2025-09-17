@@ -1361,12 +1361,14 @@ nav ul {
     }
 }
 
+.featured {
+    padding: 160px 0px 0px 0px;
+}
 .featured-wrapper {
     width: 80%;
     margin: auto;
     display:grid;
-     grid-template-columns: auto auto auto auto auto auto; 
-    grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 170px));
     align-items: center;
     justify-content: center;
     gap: 2em;
