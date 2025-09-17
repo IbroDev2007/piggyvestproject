@@ -10,6 +10,7 @@
 header {
     padding: 20px 40px 20px 40px;
     /* border: 2px solid blue; */
+    background-color: #F2F7F8;
 }
 
 nav {
@@ -1525,5 +1526,27 @@ footer {
     .right {
         width: 300px;
     }
+}
+
+.end {
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.end .policy {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #3d4f60a1;
+    /* border: 2px solid blue; */
+    /* width: 70%; */
+    padding-bottom: 20px;
+    line-height: 2.1em;
+}
+
+.end .date {
+    color: darkblue;
+    font-size: 0.7em;
 }
 
