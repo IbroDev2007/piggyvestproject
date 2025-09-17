@@ -7,12 +7,9 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-body {
-    background-color: #F2F7F8;
-}
-
 header {
     padding: 20px 40px 20px 40px;
+    /* border: 2px solid blue; */
 }
 
 nav {
@@ -154,9 +151,12 @@ nav ul {
 
 .hero-container {
     padding-top: 70px;
+    /* border: 2px solid red; */
+    background-color: #F2F7F8;
 }
 
 .hero-wrapper {
+    /* border: 2px solid blue; */
     padding: 0px 150px 0px 150px;
     display: flex;
     justify-content: space-between;
@@ -259,40 +259,6 @@ nav ul {
         transform: translateY(-15px);
     }
 }
-
-/* .young {
-    position: absolute;
-}
-
-.young1 {
-    top: 60px;
-    left: -60px;
-}
-
-.young2 {
-    top: 35px;
-    right: -60px;
-}
-
-.young3 {
-    top: 220px;
-    left: -60px;
-}
-
-.young4 {
-    top: 266px;
-    right: -60px;
-}
-
-.young5 {
-    top: 370px;
-    left: -60px;
-}
-
-.young6 {
-    top: 460px;
-    right: -60px;
-} */
 
 @media(max-width:1240px) {
     .hero-container {
@@ -436,8 +402,9 @@ nav ul {
 }
 
 .savings-container {
-    margin-top: 130px;
+    padding-top: 130px;
     padding-bottom: 100px;
+    background-color: #F2F7F8;
 }
 
 .head {
@@ -1227,6 +1194,7 @@ nav ul {
 .saver {
     /* border: 2px solid red; */
     padding: 100px 0px 300px 0px;
+    background-color: #F2F7F8;
 }
 
 .saver .head {
@@ -1262,6 +1230,9 @@ nav ul {
     } 
 }
 
+.stories {
+    background-color: #F2F7F8;
+}
 
 .stories-wrapper {
     /* border: 2px solid red; */
@@ -1363,6 +1334,7 @@ nav ul {
 
 .featured {
     padding: 160px 0px 0px 0px;
+    /* border: 2px solid orange; */
 }
 
 .featured .head2 {
@@ -1379,6 +1351,7 @@ nav ul {
 .featured-wrapper img {
     width: 100%;
     height: auto;
+    /* border: 2px solid red; */
 }
 
 .elder div {
@@ -1421,3 +1394,136 @@ nav ul {
         width: 90%;
     }
 }
+
+footer {
+    /* border: 2px solid blue; */
+    margin-top: 150px;
+    /* background-color: white; */
+    /* background-image: linear-gradient(to top, white, white, white, white, white, #F2F7F8); */
+    padding: 0px 0px 90px 0px;
+}
+
+.footer-wrapper {
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    /* display: flex; */
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns:  repeat(auto-fill, minmax(350px, auto));
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 0.1px solid #3d4f6075;
+}
+
+.footer-wrapper .left {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper .middle {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5em;
+}
+
+.middle h4 {
+    color: #3D4F60;
+}
+
+.middle ul li{
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #3D4F60;
+    font-weight: 300;
+}
+
+.footer-wrapper .right {
+    /* border: 2px solid red; */
+    text-align: right;
+    color: #3D4F60;
+}
+
+.right .footer-icons {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+
+.right .address {
+    font-weight: 300;
+}
+
+.right .mail {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media(max-width:1312px) {
+    .footer-wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width:778px) {
+    .footer-wrapper .middle {
+        grid-template-columns: auto 300px;
+        /* gap: 15em; */
+    }
+
+    .company {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        /* align-self: center; */
+        align-content: center;
+        /* align-items: center; */
+        text-align: center;
+    }
+
+    .company ul {
+        align-items: flex-start;
+    }
+
+    .footer-wrapper .left {
+        align-items: flex-start;
+        padding-bottom: 40px;
+    }
+
+    .footer-wrapper .right {
+        text-align: left;
+    }
+
+    .right .footer-icons {
+        padding-top: 40px;
+        justify-content: start;
+    }
+}
+
+@media(max-width:481px) {
+    .company {
+        width: 200px;
+    }
+}
+
+@media(max-width:379px) {
+    .company {
+        width: 150px;
+    }
+
+    .left {
+        width: 300px;
+    }
+
+    .right {
+        width: 300px;
+    }
+}
+
