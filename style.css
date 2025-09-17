@@ -5,6 +5,11 @@
     text-decoration: none;
     list-style-type: none;
     font-family: "Plus Jakarta Sans", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+body {
+    overflow-x: hidden;
 }
 
 header {
@@ -1032,7 +1037,7 @@ nav ul {
 .invest {
     /* border: 2px solid red; */
     padding: 40px 0px 160px 0px;
-    background-color: white;
+    background-color: #F2F7F8;
 }
 
 .invest .head {
@@ -1336,6 +1341,7 @@ nav ul {
 .featured {
     padding: 160px 0px 0px 0px;
     /* border: 2px solid orange; */
+    background-color: #F2F7F8;
 }
 
 .featured .head2 {
@@ -1402,6 +1408,7 @@ footer {
     /* background-color: white; */
     /* background-image: linear-gradient(to top, white, white, white, white, white, #F2F7F8); */
     padding: 0px 0px 90px 0px;
+    background-color: #F2F7F8;
 }
 
 .footer-wrapper {
