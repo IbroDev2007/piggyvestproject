@@ -216,10 +216,29 @@
         <div class="right-side">
           <a href="" class="signIn">Sign In</a>
           <a href="" class="account">Create free account</a>
-          <i class="fa-solid fa-bars"></i>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <!-- <i class="fa-solid fa-bars"></i> -->
         </div>
       </nav>
     </header>
+
+    <div class="mobile-nav">
+      <ul class="mobile-list">
+        <li>Save <i class="fa-solid fa-chevron-down"></i></li>
+        <li>Invest</li>
+        <li>Stories</li>
+        <li>FAQs</li>
+        <li>Resources<i class="fa-solid fa-chevron-down"></i></li>
+      </ul>
+      <div class="mobile-btn">
+        <a href="" class="mobilesignIn">Sign In</a>
+        <a href="" class="mobileaccount">Create free account</a>
+      </div>
+    </div>
 
     <section class="hero-container">
       <div class="hero-wrapper">
@@ -554,4 +573,13 @@
       </div>
     </footer>
   </body>
+  <script>
+    const hamurger = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    hamurger.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+      hamburger.classList.add("active");
+    });
+  </script>
 </html>
