@@ -7,10 +7,6 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 body.static {
   height: 100vh;
   overflow: hidden;
@@ -167,7 +163,6 @@ nav ul {
   z-index: 1000;
   transition: 0.2s ease all;
   transform: translateY(-150%);
-  border: 2px solid red;
 }
 
 .mobile-nav.show {

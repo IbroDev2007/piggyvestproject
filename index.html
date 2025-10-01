@@ -579,12 +579,14 @@
     const lines = document.querySelector(".line");
     const lines2 = document.querySelector(".line2");
     const lines3 = document.querySelector(".line3");
+    const theBody = document.querySelector("body");
 
     hamurger.addEventListener("click", () => {
       mobileNav.classList.toggle("show");
       lines.classList.toggle("active");
       lines2.classList.toggle("active");
       lines3.classList.toggle("active");
+      theBody.classList.toggle("static");
     });
   </script>
 </html>
