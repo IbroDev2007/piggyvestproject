@@ -217,9 +217,9 @@
           <a href="" class="signIn">Sign In</a>
           <a href="" class="account">Create free account</a>
           <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
           </div>
           <!-- <i class="fa-solid fa-bars"></i> -->
         </div>
@@ -576,10 +576,15 @@
   <script>
     const hamurger = document.querySelector(".hamburger");
     const mobileNav = document.querySelector(".mobile-nav");
+    const lines = document.querySelector(".line");
+    const lines2 = document.querySelector(".line2");
+    const lines3 = document.querySelector(".line3");
 
     hamurger.addEventListener("click", () => {
       mobileNav.classList.toggle("show");
-      hamburger.classList.add("active");
+      lines.classList.toggle("active");
+      lines2.classList.toggle("active");
+      lines3.classList.toggle("active");
     });
   </script>
 </html>

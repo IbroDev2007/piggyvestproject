@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
 }
 
+body.static {
+  height: 100vh;
+  overflow: hidden;
+}
+
 header {
   padding: 20px 40px 20px 40px;
   background-color: #f2f7f8;
@@ -141,28 +146,28 @@ nav ul {
   background-color: black;
 }
 
-.hamburger.active .line:nth-child(1) {
+.hamburger .line1:nth-child(1).active {
   transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-.hamburger.active .line:nth-child(2) {
+.hamburger .line2.active {
   opacity: 0;
 }
 
-.hamburger.active .line:nth-child(3) {
+.hamburger .line3.active {
   transform: rotate(45deg) translate(-8px, -9px);
 }
 
 .mobile-nav {
   background-color: #f2f7f8;
   position: fixed;
-  top: 110px;
+  top: 90px;
   left: 0;
   display: none;
   z-index: 1000;
   transition: 0.2s ease all;
   transform: translateY(-150%);
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 .mobile-nav.show {
